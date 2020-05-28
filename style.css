@@ -1,0 +1,342 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* Header Section */
+#resume-header {
+	height: 75vh;
+	background-image: url(Laptop.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.8;
+}
+
+.horizontal-list li {
+	display: inline-block;
+	margin: 20px 10px 0px 10px;
+}
+
+.horizontal-list li a {
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+}
+
+.horizontal-list li:hover {
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+#name-icons {
+	margin-top: 20vh;
+}
+
+#name {
+	font-size: 3rem;
+	color: white;
+	letter-spacing: 0.1rem;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.icons li a {
+	padding: 6px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.icons li a:hover {
+	box-shadow: 0px 0px 4px 4px black;
+}
+
+/* General class for aligning text center */
+.text-center {
+	text-align: center;
+}
+
+/* About Section */
+section {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(2n) {
+	background-color: rgb(255, 255, 255);
+}
+
+section:nth-child(2n + 1) {
+	background-color: #fff;
+}
+
+#about {
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+#image {
+	width: 16rem;
+	height: 16rem;
+	margin: auto;
+}
+
+#image img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	margin-top: -8rem;
+	border: 2px solid white;
+	box-shadow: 0px 0px 4px 4px lightgrey;
+}
+
+#about p {
+	margin: 150px;
+	margin-top: -14vh;
+	font-size: 22px;
+	font-weight: bold;
+	color: grey;
+	letter-spacing: 0.1rem;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.section-heading {
+	padding: 20px 10px 10px 10px;
+}
+
+.section-heading span {
+	font-size: 40px;
+	color: black;
+	margin-right: 0.5rem;
+}
+
+/* Skills Section */
+.skill-items {
+	margin-left: 50px;
+	margin-right: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills-list {
+	width: 10rem;
+	height: 2.2rem;
+	border: 2px solid black;
+	background-color: lightgray;
+	border-radius: 1rem;
+	margin-left: 6rem;
+	margin-bottom: 4rem;
+}
+
+.expertise85 {
+	width: 85%;
+	height: 100%;
+	background-color: darkblue;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.expertise50 {
+	width: 50%;
+	height: 100%;
+	background-color: orangered;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.expertise65 {
+	width: 65%;
+	height: 100%;
+	background-color: brown;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.name span {
+	position: relative;
+	top: 6px;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+/* Margin bottom */
+.mb {
+	margin-bottom: 100px;
+}
+
+/* Experience */
+.timeline {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	width: 75%;
+}
+
+.box {
+	position: relative;
+	margin: 10px;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+}
+
+.box:nth-child(2n) {
+	left: 53%;
+}
+
+.aero {
+	position: absolute;
+	left: 50%;
+	height: 85%;
+	width: 0;
+	top: 10%;
+	border: 3px dashed #0096fa6b;
+}
+
+.jet {
+	position: sticky;
+	top: 25%;
+	margin-left: -3px;
+	font-size: large;
+	transform: rotate(90deg);
+}
+
+.marker {
+	position: sticky;
+	top: 25%;
+	margin-left: -6px;
+	font-size: large;
+}
+
+.work-heading {
+	margin-top: -40px;
+	text-align: right;
+	margin-right: 5px;
+	margin-bottom: 45px;
+}
+
+.lorem {
+	margin-top: -20px;
+	font-size: 20px;
+}
+
+.box::before {
+	content: url('spotknack.jpg');
+	margin-top: 20px;
+	width: 10px;
+	height: 10px;
+}
+
+/* Education Section */
+#education .section-heading {
+	line-height: 4;
+}
+
+/* Contact Section */
+#contact {
+	margin-top: 30px;
+	height: auto;
+	background: linear-gradient(to left, #e66465, #9198e5);
+}
+
+.contact-div {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.fields {
+	position: relative;
+	margin-left: -400px;
+}
+
+input[type=text] {
+	width: 20rem;
+	border: none;
+	color: black;
+	font-size: 1.5rem;
+	background: none;
+	margin-bottom: 40px;
+	border-bottom: 3px solid black;
+}
+
+input[type=submit] {
+	width: 140px;
+	height: 60px;
+	background: none;
+	border: 3px solid black;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+	font-size: bolder;
+}
+
+input:focus {
+	outline: none;
+	background: none;
+}
+
+::placeholder {
+	color: black;
+	font-size: 1rem;
+}
+
+.details {
+	width: 400px;
+	position: absolute;
+}
+
+.heading {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.details p {
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.address {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.location {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.space {
+	margin-bottom: 10px;
+}
+
+.s-icons {
+	margin-top: 50px;
+}
+
+.horizontal-list-footer li {
+	display: inline-block;
+	margin: 20px 10px 0px 10px;
+}
+
+.horizontal-list-footer li a {
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
